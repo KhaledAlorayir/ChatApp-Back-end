@@ -7,7 +7,7 @@ import * as Users from "./UserController.js";
 //
 const app = express();
 const MyServer = http.createServer(app);
-const io = new Server(MyServer, { cors: { origin: "http://localhost:3000" } });
+const io = new Server(MyServer, { cors: { origin: "*" } });
 
 //
 app.use(cors());
