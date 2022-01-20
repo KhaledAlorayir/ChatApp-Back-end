@@ -7,7 +7,9 @@ import * as Users from "./UserController.js";
 //
 const app = express();
 const MyServer = http.createServer(app);
-const io = new Server(MyServer, { cors: { origin: "*" } });
+const io = new Server(MyServer, {
+  cors: { origin: "https://chat-app-sa.netlify.app" },
+});
 
 //
 app.use(cors());
